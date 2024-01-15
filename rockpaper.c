@@ -54,18 +54,18 @@ int main()
 	srand(time(NULL));
 
 	// Make the random number less
-	// than 100, divided it by 100
-	n = rand() % 100;
+	// than 10, divided it by 10
+	n = rand() % 10;
 
-	// Using simple probability 100 is
+	// Using simple probability 10 is
 	// roughly divided among stone,
 	// paper, and scissor
-	if (n < 33)
+	if (n < 3)
 
 		// s is denoting Stone
 		computer = 's';
 
-	else if (n > 33 && n < 66)
+	else if (n >= 3 && n <= 6)
 
 		// p is denoting Paper
 		computer = 'p';
